@@ -13,7 +13,7 @@ def get_first_name_of_season_winner(data, season)
        element["status"] == "Winner"
       #this will return right object so save the entire value of select into a variable
      end
-     select returns an array so I had to index into array
+     #select returns an array so I had to index into array
      full_name = candidate[0]["name"]
      first_name, last_name = full_name.split
      first_name
