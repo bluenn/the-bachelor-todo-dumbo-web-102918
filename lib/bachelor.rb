@@ -20,13 +20,13 @@ def get_first_name_of_season_winner(data, season)
 end
 
 def get_contestant_name(data, occupation)
-  #here I have to loop thru keys because I don't know 
+  #here I have to loop thru keys because I don't know
   #which one is right one
   candidate_name = ""
   data.each do |key, season_list|
     #gets season info for each seasion
     season_list.select do |person|
-      #loop thru each of these get season name 
+      #loop thru each of these get season name
       #and get array of contestants
       #but can capture the candidate_name below
         if person["occupation"] == occupation
@@ -35,7 +35,7 @@ def get_contestant_name(data, occupation)
         end
     end
   end
-  
+
   candidate_name
 end
 
@@ -103,6 +103,3 @@ end
 #
 # (x + (0.05 - (x % 0.05))).round(2)
 # If x = 1234.56, this will return 1234.6
-
-   
-
